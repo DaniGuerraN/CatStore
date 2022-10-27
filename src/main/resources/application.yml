@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: store
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password:
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
+  output:
+    ansi:
+      enabled: ALWAYS
+
+springdoc:
+  api-docs:
+    path: /api-docs
+logging:
+  level:
+    root: INFO
+    org.springfamework.web: ERROR
+    org.hibernate: ERROR
+    com.demo.stepapi: DEBUG
+
+myYamlValue: "Step by Step in YAML"
